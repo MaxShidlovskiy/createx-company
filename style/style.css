@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf) format("truetype");
+}
+
+* {
+    font-family: 'Lato';
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    margin: 20px auto;
+}
+header{
+    display: flex;
+    background: linear-gradient( #ff403a5b 100%, #F75E05 100%);
+}
+#logo {
+    background-image: url(../assets/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 22px;
+
+}
+.logo-login{
+    background-image: url(../assets/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 22px;
+
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+.btn-cons {
+    width: 225px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-radius: 4px;
+
+}
