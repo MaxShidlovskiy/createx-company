@@ -1,4 +1,4 @@
-const p = document.querySelector('p');
+
 
 const array = ['If you fall asleep now, you will dream. If you study now, you will live your dream.',
     'When you think it’s too late, the truth is, it’s still early.',
@@ -11,17 +11,18 @@ const array = ['If you fall asleep now, you will dream. If you study now, you wi
     'When today is over, it will never come back.',
     'Even now, your enemies are eagerly flipping through books.'
 ]
+const quote = document.querySelector('.center p');
 let flag = false;
 
-function showQuotes(p_, array_) {
+function showQuotes(array_) {
     try {
         let random = Math.floor(Math.random() * 10);
-        p_.textContent = array_[random];
+        quote.textContent = array_[random];
         if (flag === false) {
-            p_.stye = `color: #FFF`;
-                        flag = true;
-        }else{
-            p_.stye = `color: red`;
+            quote.style = `color: #FFF`;
+            flag = true;
+        } else {
+            quote.style = `color: red`;
             flag = false;
         }
     } catch (error) {
@@ -29,4 +30,5 @@ function showQuotes(p_, array_) {
     }
 }
 
-showIntervar(showQuotes, 3000, p, array)
+setInterval(showQuotes, 3000, array)
+
